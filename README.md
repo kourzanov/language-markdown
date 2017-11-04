@@ -1,3 +1,4 @@
+
 # Markdown grammar
 
 A realistic implementation of various Markdown specifications as a flexible, drop-in alternative for [language-gfm](https://github.com/atom/language-gfm/). Adds smart context-aware behavior to lists, and keyboard shortcuts for inline emphasis and links/images.
