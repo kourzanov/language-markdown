@@ -32,7 +32,7 @@ patterns: [
   # NOTE This is just temporary
   # engine=''
   {
-    match: '(?<=^|,|,\\s)(engine)(=)(([\'|"])(?:asis|asy|awk|bash|c|cat|coffee|dot|fortran|gawk|groovy|haskell|highlight|lein|mysql|node|perl|psql|python|Rcpp|Rscript|ruby|sas|scala|[Ss]cheme|bigloo|sed|sh|stan|stata|tikz|zsh)(\\4))'
+    match: '(?<=^|,|,\\s)(engine)(=)(([\'|"])(?:asis|asy|[Aa]wk|[GgNn]awk|bash|c|cat|coffee|dot|fortran|gawk|groovy|haskell|highlight|lein|mysql|node|perl|psql|python|Rcpp|Rscript|ruby|sas|scala|[Ss]cheme|[Bb]igloo|sed|sh|stan|stata|tikz|zsh)(\\4))'
     name: 'rmarkdown.attribute.meta.md'
     captures:
       1: name: 'key.keyword.md'

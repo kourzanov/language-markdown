@@ -1274,7 +1274,7 @@
           }
         },
         {
-          "match": "(?<=^|,|,\\s)(engine)(=)((['|\"])(?:asis|asy|awk|bash|c|cat|coffee|dot|fortran|gawk|groovy|haskell|highlight|lein|mysql|node|perl|psql|python|Rcpp|Rscript|ruby|sas|scala|[Ss]cheme|bigloo|sed|sh|stan|stata|tikz|zsh)(\\4))",
+          "match": "(?<=^|,|,\\s)(engine)(=)((['|\"])(?:asis|asy|[Aa]wk|[GgNn]awk|bash|c|cat|coffee|dot|fortran|groovy|haskell|highlight|lein|mysql|node|perl|psql|python|Rcpp|Rscript|ruby|sas|scala|[Ss]cheme|[Bb]igloo|sed|sh|stan|stata|tikz|zsh)(\\4))",
           "name": "rmarkdown.attribute.meta.md",
           "captures": {
             "1": {
@@ -3746,7 +3746,47 @@
           ]
         },
         {
-          "begin": "^\\s*([`~]{3,})\\s*(\\{?)((?:\\.?)(?:([Ss]cheme|bigloo)))(?=( |$|{))\\s*(\\{?)([^`\\{\\}]*)(\\}?)$",
+          "begin": "^\\s*([`~]{3,})\\s*(\\{?)((?:\\.?)(?:([Aa]wk|[GgNn]awk)))(?=( |$|{))\\s*(\\{?)([^`\\{\\}]*)(\\}?)$",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.md"
+            },
+            "2": {
+              "name": "punctuation.md"
+            },
+            "3": {
+              "name": "language.constant.md"
+            },
+            "5": {
+              "name": "punctuation.md"
+            },
+            "6": {
+              "patterns": [
+                {
+                  "include": "#special-attribute-elements"
+                }
+              ]
+            },
+            "7": {
+              "name": "punctuation.md"
+            }
+          },
+          "end": "^\\s*(\\1)$",
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.md"
+            }
+          },
+          "name": "fenced.code.md",
+          "contentName": "source.embedded.awk",
+          "patterns": [
+            {
+              "include": "source.awk"
+            }
+          ]
+        },
+        {
+          "begin": "^\\s*([`~]{3,})\\s*(\\{?)((?:\\.?)(?:([Ss]cheme|[Bb]igloo)))(?=( |$|{))\\s*(\\{?)([^`\\{\\}]*)(\\}?)$",
           "beginCaptures": {
             "1": {
               "name": "punctuation.md"

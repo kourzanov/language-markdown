@@ -26,6 +26,7 @@ scopeName: "fenced-code.md"
 # Keep this list alphabetized
 
 list: [
+  { pattern:'[Aa]wk|[GgNn]awk', include:'source.awk', contentName:'source.embedded.awk'  }
   { pattern:'apib|apiblueprint', include:'text.html.markdown.source.gfm.apib', contentName:'source.embedded.gfm.apib' }
   { pattern:'ass' }
   { pattern:'coffee|coffeescript|coffee-script', include:'source.coffee', contentName:'source.embedded.coffee' }
@@ -67,7 +68,7 @@ list: [
   { pattern:'ruby' }
   { pattern:'rust|rs', include:'source.rust', contentName:'source.embedded.rust' }
   { pattern:'sass' }
-  { pattern:'[Ss]cheme|bigloo', include:'source.scheme', contentName:'source.embedded.scheme'  }
+  { pattern:'[Ss]cheme|[Bb]igloo', include:'source.scheme', contentName:'source.embedded.scheme'  }
   { pattern:'scss', include:'source.css.scss', contentName:'source.embedded.css.scss' }
   { pattern:'sh|bash', include:'source.shell', contentName:'source.embedded.shell' }
   { pattern:'sql' }
