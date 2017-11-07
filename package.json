@@ -13,9 +13,9 @@
     "atomdoc",
     "r markdown"
   ],
-  "repository": "https://github.com/burodepeper/language-markdown",
+  "repository": "https://github.com/kourzanov/language-markdown",
   "bugs": {
-    "url": "https://github.com/burodepeper/language-markdown/issues"
+    "url": "https://github.com/kourzanov/language-markdown/issues"
   },
   "main": "lib/main.js",
   "license": "MIT",
